@@ -27,7 +27,7 @@ Trabajando con bases de datos: MySQL
 - MySQL 8.0
 
 ## Entornos
-### Desarrollo
--  http://daw217.ieslossauces.es/LoginLogoffTema5/codigoPHP/login.php
-### Explotación
--  http://daw217.sauces.local/LoginLogoffTema5/codigoPHP/login.php
+### Desarrollo (local)
+-  http://192.168.3.119/proyectoTema4/indexProyectoTema4.php
+### Explotación (local)
+-  http://192.168.3.119/proyectoTema4/indexProyectoTema4.php
