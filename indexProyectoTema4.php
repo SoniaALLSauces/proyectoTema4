@@ -30,13 +30,13 @@
                 <h3>Prácticas con acceso a Bases de Datos</h3>            
                 <table>
                     <tr class="tr">
-                        <td class="ejercicio"><a href="mostrarCodigo/muestraCreaDAW2SALDBDepartamentos.php">Script CrearDepartamentos</a></td>
+                        <td class="ejercicio"><a href="mostrarCodigo/muestraCreaDepartamentos.php">Script CrearDepartamentos</a></td>
                     </tr>
                     <tr class="tr">
-                        <td class="ejercicio"><a>Script CargaInicialDepartamentos</a></td>
+                        <td class="ejercicio"><a href="mostrarCodigo/muestraCargaDepartamentos.php">Script CargaInicialDepartamentos</a></td>
                     </tr>
                     <tr class="tr">
-                        <td class="ejercicio"><a>Script BorrarDepartamentos</a></td>
+                        <td class="ejercicio"><a href="mostrarCodigo/muestraBorraDepartamentos.php">Script BorrarDepartamentos</a></td>
                     </tr>
                     <tr>
                         <th></th>
