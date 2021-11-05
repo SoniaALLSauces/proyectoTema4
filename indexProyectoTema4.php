@@ -52,7 +52,7 @@
                     </tr>
                     <tr class="tr"> 
                         <td class="ejercicio">Ejercicio 01. Conexión a la base de datos con la cuenta usuario y tratamiento de errores.</td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
+                        <td class="tdimg"><a href="codigoPHP/ejercicio01PDO.php"><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
                         <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
                         <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
                         <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
