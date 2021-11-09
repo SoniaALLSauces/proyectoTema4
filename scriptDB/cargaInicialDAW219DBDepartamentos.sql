@@ -13,5 +13,5 @@
             ('VEN', 'Departamento de ventas',null,2),
             ('CON', 'Departamento de contabilidad',null,3),
             ('COC', 'Departamento de cocina',null,4),
-            ('MEC', 'Departamento de mecanica',null,5),
-            ('MAT', 'Departamento de matematicas',null,6);
+            ('MTO', 'Departamento de mantenimiento',null,5),
+            ('ADM', 'Departamento de administracion',null,6);

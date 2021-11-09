@@ -28,7 +28,7 @@
                 /* LLamo al archivo que contiene los parametros de la conexion */
                     require_once '../config/confDBPDO.php';
                     
-// <!-- ---------------------------------  CONEXIÓN CORRECTA  --------------------------------- -->
+//-- -----------------------CONEXIÓN CORRECTA----------------------- -->
 
                     try {  //Conexión: establezco la conexión y el código que quiero realizar
                         /* Establezco la CONEXIÓN a la base de datos con objeto PDO */            
@@ -59,8 +59,8 @@
                         //Muestro los atributos/parámetros de la conexión con un bucle
                         echo "<h3>Atributos de la conexion</h3>";
                         foreach ($atributos as $val) {
-                                echo "<p><b>PDO::ATTR_$val: </b>";
-                                echo $conexion->getAttribute(constant("PDO::ATTR_$val")) . "</p>";
+                                echo "<b>PDO::ATTR_$val: </b>";
+                                echo $conexion->getAttribute(constant("PDO::ATTR_$val")) . "<br>";
                         }
                         
                     }  
@@ -77,14 +77,12 @@
         
         <br><br>
         
-
+<!-- -----------------------CONEXIÓN ERRONEA----------------------- -->
     
         <h3>Mensaje de Conexión Erronea</h3>
         <div>
             <?php
-            
-// <!-- ---------------------------------  CONEXIÓN ERRONEA  --------------------------------- -->
-            
+
                 try {
                     $conexion2 = new PDO (HOST, USER, 'passwordErroneo');  //Introducimos password erroneo para que salte el error
                     $conexion2 ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
