@@ -14,7 +14,7 @@
     </head>
     <body>
         
-        <h2>Ejercicio 1. Conexión a la base de datos con la cuenta usuario y tratamiento de errores</h2>
+        <h2 class="centrado">Ejercicio 1. Conexión a la base de datos con la cuenta usuario y tratamiento de errores</h2>
         <h3>Mensaje de Conexión Correcta</h3>
         <div>
             <?php
@@ -31,7 +31,7 @@
 // <!-- ---------------------------------  CONEXIÓN CORRECTA  --------------------------------- -->
 
                     try {  //Conexión: establezco la conexión y el código que quiero realizar
-                        /* Establezco la CONEXIÓN a la base de datos con objeto PDO */            
+                        /* Establezco la CONEXIÓN a la base de datos con los parametros de la conexión */            
                             $conexion = new PDO (HOST, USER, PASSWORD);
 
                         /* TRATAMIENTO DE ERRORES: La clase PDO permite definir la fórmula que usará cuando se produzca un error
@@ -43,7 +43,7 @@
                         echo "<h4 style=\"color: green;\">CONEXION a Base de Datos ESTABLECIDA</h4>";
                         
                         //Parámetros de la conexión:
-                        $atributos = [ //Array inicializado con los atributos
+                        $atributos = [ //Array con los atributos que puede tener un objeto PDO
                             "AUTOCOMMIT",
                             "ERRMODE",
                             "CASE",
@@ -60,7 +60,7 @@
                         echo "<h3>Atributos de la conexion</h3>";
                         foreach ($atributos as $val) {
                                 echo "<p><b>PDO::ATTR_$val: </b>";
-                                echo $conexion->getAttribute(constant("PDO::ATTR_$val")) . "</p>";
+                                echo $conexion->getAttribute(constant("PDO::ATTR_$val")) . "</p>"; //getAtribute accede al atributo y lo muestra
                         }
                         
                     }  
@@ -102,6 +102,20 @@
 
             ?>
         </div>
+        
+        <footer class="footer">
+            <nav class="fnav">
+                <ul>
+                    <li class="ftexto"><a href="../index.php">&copy 2020-21. Sonia Anton LLanes</a></li>
+                    <li>
+                        
+                        <a class="maxMedia" href="doc/curriculum_SALL.pdf" target="_blank"><img src="webroot/images/CV.png" alt="imagen_CV"></a>
+                        <a class="maxMedia" href=""><img src="webroot/images/linkedin.png" alt="imagen_linkedIn"></a>
+                        <a class="maxMedia" href="https://github.com/SoniaALLSauces" target="_blank"><img src="webroot/images/github.png" alt="imagen_github"></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>   
         
     </body>
 </html>

@@ -5,7 +5,7 @@
 
 
     /* Borro la base de datos DAW2xxxDBDepartamentos */
-        drop database if exists DAW219DBDepartamentos;
+        drop database if exists DB219DWESProyectoTema4;
 
     /* Borro el usuario */
-        drop user if exists usuarioDAW219DBDepartamentos;
+        drop user if exists user219DWESProyectoTema4;

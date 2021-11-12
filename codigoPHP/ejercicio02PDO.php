@@ -14,8 +14,10 @@
     </head>
     <body>
         
-        <h2>Ejercicio 2. Mostrar el contenido de la tabla Departamento y el número de registros.</h2>
-        <h3></h3>
+        <h2 class="centrado">Ejercicio 2. Mostrar el contenido de la tabla Departamento y el número de registros.</h2>
+        <h3>Registros Tabla Departamento</h3>
+        <h4 style="margin-left: 50px; color: darkblue;">mediante fetch(PDO::FETCH_OBJ)</h4>
+
         <div>
             <?php
 
@@ -27,46 +29,42 @@
                 
                 /* LLamo al archivo que contiene los parametros de la conexion */
                     require_once '../config/confDBPDO.php';
-
+                    
+                /* try..catch con PDOException para establecer conexión y controlar errores */
                     try {  //Conexión: establezco la conexión y el código que quiero realizar           
                         $miDB = new PDO (HOST, USER, PASSWORD);  //establezco conexión con objeto PDO 
-                        $miDB ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  //lanzo excepción utilizando manejador propio PDOException cuando se produce un error
+                        $miDB ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  //y siempre lanzo excepción utilizando manejador propio PDOException cuando se produce un error
                         
                         echo "<h4 style=\"color: green;\">CONEXION a Base de Datos ESTABLECIDA</h4>";  //Mensaje si todo es correcto
-                        
-                        
-                        $consulta = 'SELECT * from Departamento';          //Variable para guardar el query sql
+
+                        $sql = 'SELECT * from Departamento';          //Variable para guardar el query sql
                         //$resultadoConsulta = $miDB -> query($consulta);  //Con consulta PDO, devuelve un objeto PDOStatement
-                        $resultadoConsulta = $miDB -> prepare($consulta);  //Con consulta preparada, preparo la consulta
-                        $resultadoConsulta ->execute();                    //ejecuto la consulta
+                        $consulta = $miDB -> prepare($sql);  //Con consulta preparada, preparo la consulta
+                        $consulta ->execute();                    //ejecuto la consulta
                         
             ?>            
                     <!-- Creo una tabla en html con los datos de la base de datos Departamento: -->
-                <h3>Registros Tabla Departamento</h3>
-                <h4 style="margin-left: 50px; color: darkblue;">mediante fetch(PDO::FETCH_OBJ)</h4>
-                <table>
-                    <tr>
-                        <th>Codigo</th>
-                        <th>Departamento</th>
-                        <th>Fecha Baja</th>
-                        <th>Volumen Negocio</th>
-                    </tr>
-            
+                        <table>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Departamento</th>
+                                <th>Fecha Baja</th>
+                                <th>Volumen Negocio</th>
+                            </tr>
                         
             <?php            
-                        $oRegistro = $resultadoConsulta->fetch(PDO::FETCH_OBJ);  //guardo en un objeto los datos del primer registro y avanzo puntero
+                        $oRegistro = $consulta->fetch(PDO::FETCH_OBJ);  //guardo en un objeto los datos del primer registro y avanzo puntero
                         while ($oRegistro){  //mientras haya datos (no esté vacio)
-                                //Dibujo tabla con los datos que nos devuelve el registro $oRegistro
-                            echo "<tr>";
+                    //Dibujo tabla con los datos que nos devuelve el registro $oRegistro
+                            echo '<tr class="tr">';
                                 echo "<td>". $oRegistro->codDepartamento ."</td>";
                                 echo "<td>". $oRegistro->descDepartamento ."</td>";
                                 echo "<td>". $oRegistro->fechaBaja ."</td>";
                                 echo "<td>". $oRegistro->volumenNegocio ."</td>";
                             echo "</tr>";
                                 //Y avanzo puntero
-                            $oRegistro = $resultadoConsulta->fetch(PDO::FETCH_OBJ);  //avanzo puntero al siguiente registro de la base de datos
-                        }
-                        
+                            $oRegistro = $consulta->fetch(PDO::FETCH_OBJ);  //avanzo puntero al siguiente registro de la base de datos
+                        } 
                     }  
                     catch (PDOException $excepcion){
                         $error = $excepcion->getCode();        //guardamos en la variable error el error que salte
@@ -78,9 +76,10 @@
                         unset($miDB);
                     }
 
-                
             ?>
         </div>
+        
+        
         
     </body>
 </html>

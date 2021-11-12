@@ -51,55 +51,60 @@
                         <th>Mostrar</th>
                     </tr>
                     <tr class="tr"> 
-                        <td class="ejercicio">Ejercicio 01. Conexión a la base de datos con la cuenta usuario y tratamiento de errores.</td>
+                        <td class="ejercicio"><h3>Ejercicio 01. CONEXIÓN A LA BASE DE DATOS </h3>
+                            <h5>con la cuenta usuario y tratamiento de errores.</h5></td>
                         <td class="tdimg"><a href="codigoPHP/ejercicio01PDO.php"><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
                         <td class="tdimg"><a href="mostrarCodigo/muestraEjercicio01PDO.php"><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="tdimg"><a href="">...</a></td>
+                        <td class="tdimg"><a href="">...</a></td>
                     </tr>
                     <tr class="tr"> 
-                        <td class="ejercicio">Ejercicio 02. Mostrar el contenido de la tabla Departamento y el número de registros.</td>
+                        <td class="ejercicio"><h3>Ejercicio 02. MOSTRAR EL CONTENIDO DE LA TABLA</h3>
+                            <h5>de la tabla Departamento y el número de registros.</h5></td>
                         <td class="tdimg"><a href="codigoPHP/ejercicio02PDO.php"><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
                         <td class="tdimg"><a href="mostrarCodigo/muestraEjercicio02PDO.php"><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="tdimg"><a href="">?</a></td>
+                        <td class="tdimg"><a href="">?</a></td>
                     </tr>
                     <tr class="tr"> 
-                        <td class="ejercicio">Ejercicio 03. Formulario para añadir un departamento a la tabla Departamento con validación de entrada y control de errores</td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="ejercicio"><h3>Ejercicio 03. AÑADIR UN REGISTRO A LA TABLA</h3>
+                            <h5>Añadir un departamento con validación de entrada y control de errores</h5></td>
+                        <td class="tdimg"><a href="codigoPHP/ejercicio03PDO.php"><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
+                        <td class="tdimg"><a href="mostrarCodigo/muestraEjercicio03PDO.php"><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="tdimg"><a href="">?</a></td>
+                        <td class="tdimg"><a href="">?</a></td>
                     </tr>
                     <tr class="tr"> 
-                        <td class="ejercicio">Ejercicio 04. Formulario de búsqueda de departamentos por descripción (por una parte del campo
-                            DescDepartamento, si el usuario no pone nada deben aparecer todos los departamentos).</td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="ejercicio"><h3>Ejercicio 04. BUSQUEDA DE REGISTRO/S</h3>
+                            <h5>Búsqueda por descripción (por todo o parte del campo descDepartamento, si el usuario no pone nada deben aparecer todos los departamentos).</td>
+                        <td class="tdimg"><a href="codigoPHP/ejercicio04PDO.php"><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
+                        <td class="tdimg"><a href="mostrarCodigo/muestraEjercicio04PDO.php"><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="tdimg"><a href="">?</a></td>
+                        <td class="tdimg"><a href="">?</a></td>
                     </tr>
                     <tr class="tr"> 
-                        <td class="ejercicio">Ejercicio 05. Pagina web que añade tres registros a nuestra tabla Departamento utilizando tres instrucciones
-                            insert y una transacción, de tal forma que se añadan los tres registros o no se añada ninguno.</td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="ejercicio"><h3>Ejercicio 05. TRANSACCIONES: AÑADIR TRES REGISTROS O NINGUNO</h3>
+                                <h5>Añadir tres registros a nuestra tabla Departamento utilizando tres instrucciones insert y una transacción, 
+                                    de tal forma que se añadan los tres registros o no se añada ninguno</h5></td>
+                        <td class="tdimg"><a href="codigoPHP/ejercicio05PDO.php"><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
+                        <td class="tdimg"><a href="mostrarCodigo/muestraEjercicio05PDO.php"><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="tdimg"><a href="">?</a></td>
+                        <td class="tdimg"><a href="">?</a></td>
                     </tr>
                     <tr class="tr"> 
-                        <td class="ejercicio">Ejercicio 06. Pagina web que cargue registros en la tabla Departamento desde un array departamentosnuevos utilizando una consulta preparada.</td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="ejercicio"><h3>Ejercicio 06. CARGAR REGISTROS DESDE UN ARRAY</h3>
+                                <h5>Pagina que cargue registros en la tabla Departamento desde un array aDepartamentosNuevos utilizando una consulta preparada.</td>
+                        <td class="tdimg"><a href="codigoPHP/ejercicio06PDO.php"><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
+                        <td class="tdimg"><a href="mostrarCodigo/muestraEjercicio06PDO.php"><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="tdimg"><a href="">?</a></td>
+                        <td class="tdimg"><a href="">?</a></td>
                     </tr>
                     <tr class="tr"> 
                         <td class="ejercicio">Ejercicio 07.  IMPORTAR: Página web que toma datos (código y descripción) de un fichero xml y los añade a la tabla Departamento de nuestra base de datos.</td>
                         <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
                         <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/ejecutar.png" alt="ejecutar"></a></td>
-                        <td class="tdimg"><a href=""><img src="webroot/images/mostrar.png" alt="mostrar"></a></td>
+                        <td class="tdimg"><a href="">?</a></td>
+                        <td class="tdimg"><a href="">?</a></td>
                     </tr>
                     <tr class="tr"> 
                         <td class="ejercicio">Ejercicio 08. COPIA DE SEGURIDAD / EXPORTAR: Página web que toma datos (código y descripción) de la tabla Departamento y guarda en un fichero departamento.xml.</td>
