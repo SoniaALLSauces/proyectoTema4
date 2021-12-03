@@ -14,7 +14,8 @@
     </head>
     <body>
         
-        <h2 class="centrado">Ejercicio 1. Conexión a la base de datos con la cuenta usuario y tratamiento de errores</h2>
+        <h2 class="centrado"><a href="../indexProyectoTema4.php" style="border-bottom: 2px solid black">TEMA 4:</a>
+            Ejercicio 1. Conexión a la base de datos con la cuenta usuario y tratamiento de errores</h2>
         <h3>Mensaje de Conexión Correcta</h3>
         <div>
             <?php

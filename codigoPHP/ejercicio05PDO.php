@@ -42,7 +42,8 @@
     </head>
     <body>
         
-        <h2 class="centrado">Ejercicio 05. Añadir tres registros a nuestra tabla Departamento</h2> 
+        <h2 class="centrado"><a href="../indexProyectoTema4.php" style="border-bottom: 2px solid black">TEMA 4:</a>
+            Ejercicio 05. Añadir tres registros a nuestra tabla Departamento</h2> 
         <h2 class="centrado" style="color:black">utilizando tres instrucciones insert y una transacción (inserta los tres o ninguno)</h2>
         
         <div>

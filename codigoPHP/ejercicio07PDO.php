@@ -3,7 +3,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Sonia Anton Llanes - Ejercicio 08</title>
+        <title>Sonia Anton Llanes - Ejercicio 07</title>
         <meta name="author" content="Sonia Antón Llanes">
         <meta name="description" content="Proyecto DAW2">
         <meta name="keywords" content="">
@@ -12,15 +12,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
         <style>
-            p{padding: 15px 0;}
+            p{padding-top: 20px;}
             .span{font-size: 1.5rem;}
         </style>
     </head>
     <body>
         
-        <h2 class="centrado">Ejercicio 08. COPIA DE SEGURIDAD / EXPORTAR</h2> 
-        <h2 class="centrado" style="color:black">Página que toma datos de la tabla Departamento y guarda en un
-            fichero departamento.xml, El fichero exportado se encuentra en el directorio .../tmp/ del servidor.</h2>
+        <h2 class="centrado">Ejercicio 07. IMPORTAR</h2> 
+        <h2 class="centrado" style="color:black">Página que toma datos de un fichero xml
+            y los añade a la tabla Departamento de nuestra base de datos.</h2>
         
         <div>
 
@@ -28,22 +28,37 @@
 
             /* 
              * Author: Sonia Antón Llanes
-             * Created on: 15-noviembre-2021
-             * Ejercicio 08. COPIA DE SEGURIDAD / EXPORTAR 
-             *    Página que toma datos de la tabla Departamento y guarda en un fichero departamento.xml, 
-             *    El fichero exportado se encuentra en el directorio .../tmp/ del servidor.
+             * Created on: 16-noviembre-2021
+             * Ejercicio 07. IMPORTAR: Página web que toma datos (código y descripción) de un fichero xml 
+             *    y los añade a la tabla Departamento de nuestra base de datos. 
+             *    El fichero importado se encuentra en el directorio .../tmp/ del servidor.
             */
             
                            
                 /* LLamo al archivo que contiene los parametros de la conexion */
                     require_once '../config/confDBPDO.php';
                     
+                /* Compruebo que existe el archivo desde el que importar */
+                    $archivoXML = '../tmp/departamento.xml';
+                        if (file_exists($archivoXML)) {
+                            $xml = simplexml_load_file($archivoXML);
+                        } else {
+                            exit("<p>Error al intentar abrir el fichero  $archivoXML</p>");
+                        }
+                    
+                    
                 /* try..catch con PDOException para establecer conexión y controlar errores */
                     try {  //Código que se realiza si todo es correcto           
                         $miDB = new PDO (HOST, USER, PASSWORD);  //establezco conexión con objeto PDO 
                         $miDB ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  //y siempre lanzo excepción utilizando manejador propio PDOException cuando se produce un error
                         
-                        /* CONSULTA PREPARADA: recorremos todos los registros de la tabla que queremos exportar */
+                        
+                        
+                        
+                        
+                        
+                        
+                        /* INSERT: CONSULTA PREPARADA: recorremos todos los registros de la tabla que queremos exportar */
                             $sqlConsulta = <<<EOD
                                         SELECT * FROM Departamento;
                                         EOD;
@@ -78,11 +93,11 @@
                                     $oRegistro = $consulta->fetch(PDO::FETCH_OBJ);  //avanzo puntero al siguiente registro de la base de datos
                                 } 
                             
-                                $documentoXML -> save('../tmp/departamento.xml');  //guardo el documento xml generado en la ruta indicada
+                                $documentoXML -> save('../tmp/exportar.xml');  //guardo el documento xml generado en la ruta indicada
                             
-                                echo "<h4 style='color:green;'>EXPORTACION REALIZADA CORRECTAMENTE</h4>";
-                                echo "<p> Contenido del archivo <span class='span'>departamento.xml</span> : </p>";
-                                highlight_file('../tmp/departamento.xml');  //muestro el archivo exportado
+                                echo "<p style='color:green;'>EXPORTACION REALIZADA CORRECTAMENTE</p>";
+                                echo "<p> Contenido del archivo <span class='span'>exportar.xml</span> : </p>";
+                                highlight_file('../tmp/exportar.xml');  //muestro el archivo exportado
                             
                     }  
                     catch (PDOException $excepcion){  //Codigo si se produce algún error

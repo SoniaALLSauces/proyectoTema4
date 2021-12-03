@@ -42,7 +42,8 @@
     </head>
     <body>
         
-        <h2 class="centrado">Ejercicio 06. Cargar registros en la tabla desde un array</h2> 
+        <h2 class="centrado"><a href="../indexProyectoTema4.php" style="border-bottom: 2px solid black">TEMA 4:</a>
+            Ejercicio 06. Cargar registros en la tabla desde un array</h2> 
         <h2 class="centrado" style="color:black">utilizando el array departamentosNuevos y una consulta preparada</h2>
         
         <div>
@@ -53,7 +54,7 @@
              * Author: Sonia Antón Llanes
              * Created on: 11-noviembre-2021
              * Ejercicio 06. Pagina web que cargue registros en la tabla Departamento 
-             * desde un array departamentosNuevos utilizando una consulta preparada. 
+             *    desde un array departamentosNuevos utilizando una consulta preparada. 
             */
             
                            
@@ -82,10 +83,8 @@
                                  'descDepartamento' => 'Desarrollo Entorno Cliente',
                                  'volumenNegocio' => 5]
                             );
+                            $aFiltrosSelect = array ('DAW', 'DIW', 'DES', 'DEC');  //array que creo para filtrar los nuevos departamentos para mostrarlos
                             
-                            
-                        
-                        
                         /* VARIABLE HEREDOC con query sql insertar */
                             $sqlInsertarDto = <<<EOD
                                     INSERT INTO Departamento  
@@ -119,7 +118,10 @@
                             </tr>
                         
             <?php            
-                        $sql = 'SELECT * FROM Departamento';          //Variable para guardar el query sql
+                        $sql = <<<EOD
+                                SELECT * FROM Departamento  
+                                WHERE codDepartamento='{$aFiltrosSelect[0]}' OR codDepartamento='{$aFiltrosSelect[1]}' OR codDepartamento='{$aFiltrosSelect[2]}' OR codDepartamento='{$aFiltrosSelect[3]}';
+                                EOD;          //Variable para guardar el query sql
                         $consulta = $miDB -> prepare($sql);  //Con consulta preparada, preparo la consulta
                         $consulta ->execute(); 
                         $oRegistro = $consulta->fetch(PDO::FETCH_OBJ);  //guardo en un objeto los datos del primer registro y avanzo puntero

@@ -42,7 +42,8 @@
     </head>
     <body>
         
-        <h2 class="centrado">Ejercicio 3. Formulario para añadir un departamento a la tabla Departamento</h2>
+        <h2 class="centrado"><a href="../indexProyectoTema4.php" style="border-bottom: 2px solid black">TEMA 4:</a>
+            Ejercicio 3. Formulario para añadir un departamento a la tabla Departamento</h2>
         <h2 class="centrado" style="color:black">con validación de entrada y control de errores.</h2>
         <div>
 
@@ -138,6 +139,7 @@
                                         EOD;
                                 //$sqlInsertarDto = "INSERT INTO Departamento VALUES (:codDepartamento, :descDepartamento, :fechaBaja, :volumenNegocio)";
                                 $insertar = $miDB -> prepare($sqlInsertarDto);  //Con consulta preparada, preparo la consulta que devuelve un objeto PDOStatement
+/*No es necesario bindear los parámetros, se añaden directamente las variables*/                                
                                 $parametros = [ ":codDepartamento" => $aRespuestas['codDepartamento'],
                                                 ":descDepartamento" => $aRespuestas['descDepartamento'],
                                                 ":fechaBaja" => null,

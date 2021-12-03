@@ -14,7 +14,8 @@
     </head>
     <body>
         
-        <h2 class="centrado">Ejercicio 2. Mostrar el contenido de la tabla Departamento y el número de registros.</h2>
+        <h2 class="centrado"><a href="../indexProyectoTema4.php" style="border-bottom: 2px solid black">TEMA 4:</a>
+            Ejercicio 2. Mostrar el contenido de la tabla Departamento y el número de registros.</h2>
         <h3>Registros Tabla Departamento</h3>
         <h4 style="margin-left: 50px; color: darkblue;">mediante fetch(PDO::FETCH_OBJ)</h4>
 
@@ -53,6 +54,7 @@
                             </tr>
                         
             <?php            
+                        /* PDO::FETCH-OBJ -> nos devuelve un objeto de la clase PDOStatement */
                         $oRegistro = $consulta->fetch(PDO::FETCH_OBJ);  //guardo en un objeto los datos del primer registro y avanzo puntero
                         while ($oRegistro){  //mientras haya datos (no esté vacio)
                     //Dibujo tabla con los datos que nos devuelve el registro $oRegistro

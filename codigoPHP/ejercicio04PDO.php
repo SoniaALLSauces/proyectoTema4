@@ -41,8 +41,9 @@
         </style>
     </head>
     <body>
-        
-        <h2 class="centrado">Ejercicio 04. Formulario de búsqueda de departamentos por descripción</h2>
+        <h2></h2>
+        <h2 class="centrado"><a href="../indexProyectoTema4.php" style="border-bottom: 2px solid black">TEMA 4:</a>
+            Ejercicio 04. Formulario de búsqueda de departamentos por descripción</h2>
         <h2 class="centrado" style="color:black">(si el usuario no pone nada deben aparecer todos los departamentos)</h2>
         <div>
 
@@ -77,7 +78,7 @@
                     /* VALIDACIÓN de cada entrada del formulario con la libreria de validación que importamos */
                         if (isset($_POST['submit'])){  //Pulso el boton enviar
                             //Valido cada campo y si hay algun error lo guardo en el array aErrores
-                                $aErrores['eDescDepartamento']= validacionFormularios::comprobarAlfabetico($_REQUEST['descDepartamento'], 50, 1, OBLIGATORIO);
+                                $aErrores['eDescDepartamento']= validacionFormularios::comprobarAlfabetico($_REQUEST['descDepartamento'], 50, 1, OPCIONAL);
                                 //Recorro array errores y compruebo si se ha incluido algún error
                             foreach ($aErrores as $campo => $error){  
                                 if ($error!=null){         //si es distinto de null

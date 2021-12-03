@@ -6,7 +6,7 @@
 
 **Fecha Inicio Proyecto: 03/11/2021**
 
-**Ultima Actualización: 03/11/2021**
+**Ultima Actualización: 16/11/2021**
 
 ## Descripción 
 Trabajando con bases de datos: MySQL
@@ -28,6 +28,6 @@ Trabajando con bases de datos: MySQL
 
 ## Entornos
 ### Desarrollo (local)
--  http://192.168.3.119/proyectoTema4/indexProyectoTema4.php
+-  http://daw219.sauces.local/proyectoTema4/indexProyectoTema4.php
 ### Explotación (local)
--  http://192.168.3.119/proyectoTema4/indexProyectoTema4.php
+-  
