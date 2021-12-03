@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<departamentos>
+  <departamento>
+    <codDepartamento>ADM</codDepartamento>
+    <descDepartamento>Departamento de administracion</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>6</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>CON</codDepartamento>
+    <descDepartamento>Departamento de contabilidad</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>3</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>DAW</codDepartamento>
+    <descDepartamento>Desarrollo Aplicaciones Web</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>8</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>DEC</codDepartamento>
+    <descDepartamento>Desarrollo Entorno Cliente</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>5</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>DES</codDepartamento>
+    <descDepartamento>Desarrollo Entorno Servidor</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>5</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>DIW</codDepartamento>
+    <descDepartamento>Diseño Aplicaciones Web</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>5</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>EXT</codDepartamento>
+    <descDepartamento>Departamentos Externos</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>6</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>FIN</codDepartamento>
+    <descDepartamento>Departamento de Financiacion</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>6</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>INF</codDepartamento>
+    <descDepartamento>Departamento de informatica</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>1</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>MTO</codDepartamento>
+    <descDepartamento>Departamento de mantenimiento</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>5</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>RRH</codDepartamento>
+    <descDepartamento>Departamento de Recursos Humanos</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>4</volumenNegocio>
+  </departamento>
+  <departamento>
+    <codDepartamento>VEN</codDepartamento>
+    <descDepartamento>Departamento de ventas</descDepartamento>
+    <fechaBaja/>
+    <volumenNegocio>2</volumenNegocio>
+  </departamento>
+</departamentos>
